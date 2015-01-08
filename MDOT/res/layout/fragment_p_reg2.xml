@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <TableLayout
+          
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="2" >
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblPhysicalocation"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Physical Location"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtPhysicalocation"
+            android:layout_column="2"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:padding="3dip"
+            tools:ignore="TextFields" >
+
+            
+        </EditText>
+    </TableRow>
+    <TableRow >
+
+                <TextView
+                    android:id="@+id/lblDistrict"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="District:"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/spinnerdistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+
+    </TableRow>
+
+    
+
+    <TableRow >
+
+                <TextView
+                    android:id="@+id/lblplaceofwork"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Place Of Work:"
+                    tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtplaceofwork"
+            android:layout_column="2"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:padding="3dip"
+            tools:ignore="TextFields" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+<TableRow>
+
+    <TextView
+        android:id="@+id/lbllocation"
+        
+        android:layout_column="1"
+        
+        android:layout_weight="2"
+        android:gravity="left"
+        android:padding="3dip"
+        android:text="Location"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtlocation"
+        android:layout_column="2"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:padding="3dip"
+        tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+
+    
+    </TableRow>
+
+  <TableRow>
+
+            <TextView
+                android:id="@+id/lblsublocation"
+               
+                android:layout_column="1"
+                
+                android:layout_weight="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Sub Location"
+                tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtsublocation"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+   
+
+
+
+       
+    </TableRow>
+
+    
+
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblvillage"
+              
+              android:layout_column="1"
+              
+              android:layout_weight="2"
+              
+              android:padding="3dip"
+              android:text="Village:"
+              tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtvillage"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+   
+
+        
+    </TableRow>
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblnearestschool"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_column="1"
+              
+              android:layout_weight="2"
+              android:gravity="left"
+              android:padding="3dip"
+              android:text="Nearest School:"
+              tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtnearestschool"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText></TableRow>
+
+  
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblnearestchurch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            
+            android:layout_weight="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Nearest Church:"
+            tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtnearestchurch"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+    </TableRow>
+<TableRow >        <TextView
+            android:id="@+id/lblnameofchief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+          
+            android:layout_weight="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Name Of Chief:"
+            tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtnameofchief"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText></TableRow>
+    <TableRow >      <TextView
+            android:id="@+id/lblnameofsubchief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Name Of SubChief:"
+            tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtnameofsubchief"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText></TableRow>
+    <TableRow >      <TextView
+        android:id="@+id/lblnameofvillageelder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_weight="2"
+        android:padding="3dip"
+        android:text="NameOfVillageElder:" tools:ignore="HardcodedText"/>
+
+          <EditText
+              android:id="@+id/txtnameofvillageelder"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+       
+    </EditText></TableRow>
+</TableLayout>
+</ScrollView>

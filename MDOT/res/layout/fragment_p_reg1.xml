@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <TableLayout
+          
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="2" >
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblserialNo"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Serial Number:"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtregserialno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+
+    <TableRow >
+
+                <TextView
+                    android:id="@+id/lblregfname"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="First Name:"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+    </TableRow>
+<TableRow>
+
+    <TextView
+        android:id="@+id/lblmname"
+        
+        android:layout_column="1"
+        
+        android:layout_weight="2"
+        android:gravity="left"
+        android:padding="3dip"
+        android:text="Middle Name:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtmname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    
+    </TableRow>
+
+  <TableRow>
+
+            <TextView
+                android:id="@+id/lbllname"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Last Name"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtlname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+       
+    </TableRow>
+
+    
+
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblalias"
+              
+              android:layout_column="1"
+              
+              android:layout_weight="2"
+              
+              android:padding="3dip"
+              android:text="Alias:"
+              tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtalias"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPersonName" />
+        
+    </TableRow>
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblspousename"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_column="1"
+              android:layout_weight="2"
+              android:padding="3dip"
+              android:text="Spouse Name:"
+              tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtspousename"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPersonName" />
+
+</TableRow>
+<TableRow >
+ <TextView
+                    android:id="@+id/lblsex"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Sex:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnersex"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+   <TableRow>
+
+        <TextView
+            android:id="@+id/lblpatientAge"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Age (yrs):"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblpurposeoflocator"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_column="1"
+              android:layout_weight="2"
+              android:padding="3dip"
+              android:text="Purpose Of Locator Form Explained ?"
+              tools:ignore="HardcodedText" />
+
+
+
+      <RadioGroup android:id="@+id/rglocatorform"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/rbtnlocatorformYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            tools:ignore="ObsoleteLayoutParam,HardcodedText" />                    
+                    <RadioButton
+            android:id="@+id/rbtnlocatorformNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+        </RadioGroup>
+  </TableRow>
+     <TableRow>
+<TextView
+                android:id="@+id/lblPGPSlat"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="GPS Lat Coordinates:"
+                tools:ignore="HardcodedText" />
+
+<TextView
+    android:id="@+id/lblpatientGPSlat"
+    android:layout_column="1"
+    android:layout_weight="2"
+    android:padding="3dip"
+    tools:ignore="HardcodedText" />
+
+    </TableRow>
+        <TableRow>
+<TextView
+                android:id="@+id/lblPGPSlong"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="GPS Long Coordinates:"
+                tools:ignore="HardcodedText" />
+
+<TextView
+    android:id="@+id/lblpatientGPSlong"
+    android:layout_column="1"
+    android:layout_weight="2"
+    android:padding="3dip"
+    tools:ignore="HardcodedText" />
+
+    </TableRow>
+</TableLayout>
+</ScrollView>

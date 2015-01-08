@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+          
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"  
+            android:stretchColumns="*" 
+            android:background="#ffffff">
+
+                        <!-- Row 1 with 2 columns -->
+                        <TableRow
+                            android:id="@+id/trTabletsReceived"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="left">
+
+                            <TextView
+                                 android:id="@+id/lblTabletsReceived"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="NO.Of Tablets Received:"
+                                 android:textStyle="bold"
+                                 android:textColor="#000"
+                                 android:textSize="18sp" 
+                                 android:layout_span="4"         
+                                 tools:ignore="HardcodedText" />
+
+                              <EditText
+                                    android:id="@+id/txtTabletsReceived"
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="16dp"                                   
+                                    android:ems="10"
+                                    android:layout_span="2"
+                                    android:inputType="number" 
+                                    android:layout_gravity="left">
+                                <requestFocus />
+                              </EditText>
+
+                            
+                       </TableRow>
+                                               <!-- Row 1 with 2 columns -->
+                        <TableRow
+                            android:id="@+id/trDateTabletsReceived"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="left">
+
+                            <TextView
+                                 android:id="@+id/lblDateTabletsReceived"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="Date Tablets Received:"
+                                 android:textStyle="bold"
+                                 android:textColor="#000"
+                                 android:textSize="18sp" 
+                                 android:layout_span="4"         
+                                 tools:ignore="HardcodedText" />
+
+                            <Button
+                                android:id="@+id/btnDatePicker"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="right"
+                                android:layout_span="1"
+                                android:text="Date Picker"
+                                tools:ignore="HardcodedText" />
+                            
+                       </TableRow>
+         
+
+                              
+                       <TableRow
+                            android:id="@+id/trAddTablets"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                              
+                            <Button
+                                android:id="@+id/btnAddDrug"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="left"
+                                android:layout_span="4"
+                                android:text="Add Tablets>>"
+                                tools:ignore="HardcodedText" />
+
+ 
+                         </TableRow>
+                                                 <!-- Row 2 with 3 columns -->
+
+                        <TableRow
+                            android:id="@+id/trTabletsAvailable"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                              
+                            <TextView
+                                 android:id="@+id/lblTabletsAvailable"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="fill_parent"
+                                 android:text="Tablets Available:"
+                                 android:textStyle="bold"
+                                 android:textColor="#000"
+                                 android:textSize="18sp" 
+                                 android:layout_span="4"         
+                                 tools:ignore="HardcodedText" />
+
+                              <EditText
+                                    android:id="@+id/txtTabletsAvailable"
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="16dp"                                   
+                                    android:ems="10"
+                                    android:layout_span="2"
+                                    android:inputType="number" >
+
+                                <requestFocus />
+                              </EditText>
+                         </TableRow>
+                         
+                        <!-- Row 3 with 2 columns -->
+                        <TableRow
+                            android:id="@+id/trTabletsTaken"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:gravity="center_horizontal">
+                             <TextView
+                                 android:id="@+id/lblTabletsTaken"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="fill_parent"
+                                 android:text="Tablets Taken:"
+                                 android:textStyle="bold"
+                                 android:textColor="#000"
+                                 android:textSize="18sp" 
+                                 android:layout_span="4"         
+                                 tools:ignore="HardcodedText" />
+
+                              <EditText
+                                    android:id="@+id/txtTabletsTaken"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="16dp"                                   
+                                    android:ems="10"
+                                    android:layout_span="2"
+                                    android:inputType="number" >
+
+                                <requestFocus />
+                              </EditText>  
+                         </TableRow>
+                                                  
+                       <TableRow
+                            android:id="@+id/trGetBalance"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                              
+                            <Button
+                                android:id="@+id/btnGetBal"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_span="4"
+                                android:text="Get Balance>>"
+                                tools:ignore="HardcodedText" />
+                             <TextView
+                                 android:id="@+id/lblGetBalance"
+                                 android:layout_width="120sp"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="#000"
+                                 android:textSize="38sp" 
+                                 android:layout_span="2"         
+                                 tools:ignore="HardcodedText" />                                
+                                 <!--android:hint="Calculated Bal"-->
+                                 
+ 
+                         </TableRow>        
+                     
+   <TableRow
+                            android:id="@+id/trMissingTablets"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                              
+                            <TextView
+                                 android:id="@+id/lblMissingTablets"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="fill_parent"
+                                 android:text="Missing Tablets:"
+                                 android:textStyle="bold"
+                                 android:textColor="#000"
+                                 android:textSize="18sp" 
+                                 android:layout_span="4"         
+                                 tools:ignore="HardcodedText" />
+
+                              <EditText
+                                    android:id="@+id/txtMissingTablets"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="16dp"                                   
+                                    android:ems="10"
+                                    android:layout_span="2"
+                                    android:inputType="number" >
+
+                                <requestFocus />
+                              </EditText>
+                         </TableRow>                      
+   <TableRow
+                            android:id="@+id/trReasonMissingTablets"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                              
+                            <TextView
+                                 android:id="@+id/lblReasonMissingTablets"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="fill_parent"
+                                 android:text="Reason For Missing Tablets:"
+                                 android:textStyle="bold"
+                                 android:textColor="#000"
+                                 android:textSize="18sp" 
+                                 android:layout_span="4"         
+                                 tools:ignore="HardcodedText" />
+
+                         </TableRow>
+                         <TableRow
+                            android:id="@+id/trReasonMissingTab2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+<RadioGroup
+            android:id="@+id/rgReasonMissingTab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+     <RadioButton
+         android:id="@+id/rbtnLost"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:checked="true"
+         android:text="Lost"
+         tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbtnDestroyed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/rbtnNo"
+            android:text="Destroyed"
+            tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbtnExpired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expired"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbtnStolen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stolen"
+            tools:ignore="HardcodedText" />
+     <RadioButton
+         android:id="@+id/rbtnOther"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Other"
+         tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+</RadioGroup>
+
+</TableRow>
+  
+
+                         
+                                            
+      </TableLayout>
+
+</ScrollView>

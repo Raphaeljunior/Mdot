@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        
+
+ <TextView
+     android:id="@+id/lblOtherDrugs"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Did The Patient Take other Drugs Before Taking TB Drugs ?"
+     android:textColor="#000"
+     android:textSize="18sp"
+     android:textStyle="bold"
+     tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/rgOtherDrugs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbtnOtherDrugsYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbtnOtherDrugsNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="No"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbtnOtherDrugsDontKnow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don&apos;t Know" tools:ignore="HardcodedText"/>
+
+        </RadioGroup>
+        <TextView
+            android:id="@+id/lblWhichDrug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which Drug ?"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/lblDrug1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drug one:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtOtherDrug1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextFields" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblDrug2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drug Two:"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtOtherDrug2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextFields"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+                <TextView
+                    android:id="@+id/lblDrug3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug Three:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/txtOtherDrug3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TextFields" 
+                    android:inputType="textMultiLine">
+
+            <requestFocus />
+        </EditText>
+
+                <TextView
+                    android:id="@+id/lblDrug4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug Four:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/txtOtherDrug4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TextFields"
+                    android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+                <TextView
+                    android:id="@+id/lblDrug5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug Five:"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/txtOtherDrug5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TextFields" 
+                    android:inputType="textMultiLine">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    
+
+</ScrollView>

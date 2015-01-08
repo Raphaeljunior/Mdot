@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.cdckemri.mdot.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+     <TextView
+         android:id="@+id/UserNamelabel"
+         android:layout_width="fill_parent"
+         android:layout_height="50sp"
+         android:layout_alignLeft="@+id/section_label"
+         android:layout_below="@+id/section_label"
+         android:text="@string/UserName"
+         android:textStyle="bold"
+         android:textSize="18sp" />
+
+     <EditText
+         android:id="@+id/username"
+         android:layout_width="fill_parent"
+         android:layout_height="50sp"
+         android:layout_alignLeft="@+id/section_label"
+         android:layout_below="@+id/section_label"
+         android:layout_marginTop="32dp"
+         android:hint="@string/Enter_UserName"
+         android:inputType="textAutoCorrect|textAutoComplete|textEmailAddress" />
+
+     <TextView
+         android:id="@+id/passwordlabel"
+         android:layout_width="fill_parent"
+         android:layout_height="50sp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/username"
+         android:text="@string/Password"
+         android:textSize="18sp"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/password"
+         android:layout_width="fill_parent"
+         android:layout_height="50sp"
+         android:layout_alignLeft="@+id/passwordlabel"
+         android:layout_centerVertical="true"
+         android:hint="@string/Enter_password"
+         android:inputType="textPassword" />
+
+     <Button
+         android:id="@+id/btnLogin"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/password"
+         android:text="@string/Login"
+         android:onClick="logUseronclick" />
+
+     <Button
+         android:id="@+id/btnCancel"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnLogin"
+         android:layout_below="@+id/btnLogin"
+         android:text="@string/Cancel" />
+     
+
+
+     
+
+</RelativeLayout>

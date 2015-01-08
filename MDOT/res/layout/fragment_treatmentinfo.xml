@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <TableLayout
+          
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="2" >
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblserialNo"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Serial Number:"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtregserialno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+
+    <TableRow >
+
+                <TextView
+                    android:id="@+id/lblregfname"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="First Name:"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+    </TableRow>
+<TableRow>
+
+    <TextView
+        android:id="@+id/lblmname"
+        
+        android:layout_column="1"
+        
+        android:layout_weight="2"
+        android:gravity="left"
+        android:padding="3dip"
+        android:text="Middle Name:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtmname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    
+    </TableRow>
+
+  <TableRow>
+
+            <TextView
+                android:id="@+id/lbllname"
+                android:layout_column="1"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Last Name"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtlname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+       
+    </TableRow>
+
+    
+
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblalias"
+              
+              android:layout_column="1"
+              
+              android:layout_weight="2"
+              
+              android:padding="3dip"
+              android:text="Alias:"
+              tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtalias"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPersonName" />
+        
+    </TableRow>
+ 
+<TableRow >
+ <TextView
+                    android:id="@+id/lblsex"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Sex:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnersex"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+   <TableRow>
+
+        <TextView
+            android:id="@+id/lblpatientAge"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Age (yrs):"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+   <TableRow >
+ <TextView
+                    android:id="@+id/lblinitialtreatmentregime"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Initial Treatment Regime:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnerinitialtreatmentregime"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+           <TableRow >
+ <TextView
+                    android:id="@+id/lblTBtype"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="TB Type:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnerTBtype"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+         <TableRow >
+ <TextView
+                    android:id="@+id/lblTBsubtype"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="TB Sub Type:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnerTBsubtype"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+           <TableRow >
+ <TextView
+                    android:id="@+id/lbltreatmenttype"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Treatment Type:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnertreatmenttype"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+          <TableRow >
+                <TextView
+                    android:id="@+id/lbldatetreatmentstarted"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Date Treatment Started:"
+                    tools:ignore="HardcodedText"></TextView> 
+
+        <Button
+            android:id="@+id/btnTimeDrugTaken"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:onClick="showTimeSTDate"
+            android:padding="3dip"
+            android:text="Time Picker/24hr"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    
+</TableRow>
+ <TableRow>
+
+        <TextView
+            android:id="@+id/lblweightatstart"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Weight At Start (Kgs):"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtweightatstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+           <TableRow >
+ <TextView
+                    android:id="@+id/lblhealthfacility"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Health facility:"
+                    tools:ignore="HardcodedText" />
+    <Spinner
+                    android:id="@+id/spinnerhealthfacility"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+    
+</TableRow>
+</TableLayout>
+</ScrollView>

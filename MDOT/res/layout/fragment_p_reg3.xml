@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <TableLayout
+          
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="2" >
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblestatename"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:padding="3dip"
+            android:text="Estate Name"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtestatename"
+            android:layout_column="2"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:padding="3dip"
+            tools:ignore="TextFields" >
+
+            
+        </EditText>
+    </TableRow>
+ 
+
+    
+
+    <TableRow >
+
+                <TextView
+                    android:id="@+id/lblplotnumber"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Plot Number:"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/txtplotno"
+                    android:layout_column="2"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:ems="10"
+                    android:inputType="number" />
+    
+    </TableRow>
+<TableRow>
+
+    <TextView
+        android:id="@+id/lbllclosefriend"
+        
+        android:layout_column="1"
+        
+        android:layout_weight="2"
+        android:gravity="left"
+        android:padding="3dip"
+        android:text="Closest Friend"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtclosefriend"
+        android:layout_column="2"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:padding="3dip"
+        tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+
+    
+    </TableRow>
+
+  <TableRow>
+
+            <TextView
+                android:id="@+id/lblfriendresidence"
+               
+                android:layout_column="1"
+                
+                android:layout_weight="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Friend Residence:"
+                tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txtfriendresidence"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText></TableRow>
+
+    
+
+    <TableRow>
+
+          <TextView
+              android:id="@+id/lblphone1"
+              android:layout_column="1"
+              android:layout_weight="2"
+              android:padding="3dip"
+              android:text="Phone Contact1:"
+              tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtphone1"
+        android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+        android:ems="10"
+        android:inputType="phone" >
+        
+    </EditText></TableRow>
+  <TableRow ><TextView
+                    android:id="@+id/lblbelongsto1"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Belongs To:"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/spinnerbelongsto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+      
+
+  </TableRow>
+    <TableRow><TextView
+              android:id="@+id/lblphone2"
+              android:layout_column="1"
+              android:layout_weight="2"
+              android:padding="3dip"
+              android:text="Phone Contact2:"
+              tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtphone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_weight="3"
+        android:gravity="right"
+         android:padding="3dip"
+        android:ems="10"
+        android:inputType="phone" />
+    </TableRow>
+
+   <TableRow ><TextView
+                    android:id="@+id/lblbelongsto2"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"
+                    android:text="Belongs To:"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/spinnerbelongsto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="3dip"/>
+      
+
+  </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblhomedirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Direction To Home:"
+            tools:ignore="HardcodedText" />
+
+          <EditText
+              android:id="@+id/txthomedirection"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              android:inputType="textMultiLine"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+    </TableRow>
+<TableRow >        <TextView
+            android:id="@+id/lblregcomments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Comments:"
+            tools:ignore="HardcodedText" />
+<EditText
+              android:id="@+id/txtcomments"
+              android:layout_column="2"
+              android:layout_weight="3"
+              android:gravity="right"
+              android:padding="3dip"
+              android:inputType="textMultiLine"
+              tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+</TableRow>
+   
+  
+</TableLayout>
+</ScrollView>

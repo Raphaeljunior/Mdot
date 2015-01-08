@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cdckemri.mdot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.cdckemri.mdot.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.Home"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.DOT_Daily_Report"
+            android:label="@string/title_activity_dot__daily__report"
+            android:parentActivityName="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" />
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.PatientRegistration"
+            android:label="@string/title_activity_patient_registration"
+            android:parentActivityName="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" />
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.AmbassadorRegistration"
+            android:label="@string/title_activity_ambassador_registration"
+            android:parentActivityName="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" />
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.ViewPatientRecords"
+            android:label="@string/title_activity_view_patient_records"
+            android:parentActivityName="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" />
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.SideEffectScreening"
+            android:label="@string/title_activity_side_effect_screening"
+            android:parentActivityName="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" />
+        </activity>
+        <activity
+            android:name="org.cdckemri.mdot.RecordDOT_Video"
+            android:label="@string/title_activity_record_dot__video"
+            android:parentActivityName="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.cdckemri.mdot.HomeScreen$PlaceholderFragment" />
+        </activity>
+ 
+        <activity
+            android:name="org.cdckemri.mdot.Report_MainActivity"
+            android:label="@string/title_activity_daily_report" >
+        </activity>
+               <fragment
+            android:name="org.cdckemri.mdot.ReportFragment1"
+            android:label="@string/title_fragment_report1" >
+        </fragment>
+                  <fragment
+            android:name="org.cdckemri.mdot.ReportFragment2"
+            android:label="@string/title_fragment_report2" >
+        </fragment>
+                          <fragment
+            android:name="org.cdckemri.mdot.ReportFragment3"
+            android:label="@string/title_fragment_report3" >
+        </fragment>
+                          <fragment
+            android:name="org.cdckemri.mdot.ReportFragment4"
+            android:label="@string/title_fragment_report4" >
+        </fragment>
+                          <fragment
+            android:name="org.cdckemri.mdot.ReportFragment5"
+            android:label="@string/title_fragment_report5" >
+        </fragment>
+                          <fragment
+            android:name="org.cdckemri.mdot.ReportFragment6"
+            android:label="@string/title_fragment_report6" >
+        </fragment>
+                          <activity android:name="org.cdckemri.mdot.Reg_p_MainActivity" android:theme="@style/AppTheme"></activity>
+               
+                          <fragment
+            android:name="org.cdckemri.mdot.Reg_p_Fragment1"
+            android:label="@string/title_fragment_p_reg1" >
+        </fragment>
+                       <fragment
+            android:name="org.cdckemri.mdot.Reg_p_Fragment2"
+            android:label="@string/title_fragment_p_reg2" >
+        </fragment>
+                    <fragment
+            android:name="org.cdckemri.mdot.Reg_p_Fragment3"
+            android:label="@string/title_fragment_p_reg3" >
+        </fragment>        
+    </application>
+
+</manifest>
